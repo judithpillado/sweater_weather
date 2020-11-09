@@ -5,7 +5,6 @@ class Trail
               :trails
 
   def initialize(trail, location, weather, commute)
-    require "pry"; binding.pry
     @id = nil
     @location = location
     @forecast = {
