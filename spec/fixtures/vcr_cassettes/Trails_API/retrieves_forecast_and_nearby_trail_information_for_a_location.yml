@@ -1,0 +1,499 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=MAPQUEST_API&location=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:59:48 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1736'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:59:48 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=3316F9A67883B9E5559C0DFE3B499EAF; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2020 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2020 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_API&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1152676214"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=MAPQUEST_API&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-1803473417"}]}]}'
+  recorded_at: Mon, 09 Nov 2020 18:59:48 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/onecall?appid=WEATHER_API&exclude=minutely&lat=39.738453&lon=-104.984853&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 09 Nov 2020 18:59:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '15574'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/onecall?exclude=minutely&lat=39.74&lon=-104.98&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"lat":39.74,"lon":-104.98,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1604948387,"sunrise":1604929101,"sunset":1604965761,"temp":32.7,"feels_like":23.43,"pressure":1011,"humidity":66,"dew_point":23.68,"uvi":2.5,"clouds":90,"visibility":8047,"wind_speed":8.05,"wind_deg":50,"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"}]},"hourly":[{"dt":1604944800,"temp":32.7,"feels_like":23.65,"pressure":1011,"humidity":66,"dew_point":23.68,"clouds":90,"visibility":10000,"wind_speed":7.67,"wind_deg":12,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.3},{"dt":1604948400,"temp":36.97,"feels_like":28.26,"pressure":1010,"humidity":65,"dew_point":26.98,"clouds":85,"visibility":10000,"wind_speed":7.78,"wind_deg":39,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.35},{"dt":1604952000,"temp":39,"feels_like":30.6,"pressure":1009,"humidity":66,"dew_point":29.01,"clouds":90,"visibility":10000,"wind_speed":7.74,"wind_deg":51,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.38},{"dt":1604955600,"temp":38.98,"feels_like":32.34,"pressure":1008,"humidity":71,"dew_point":30.58,"clouds":94,"visibility":3007,"wind_speed":5.03,"wind_deg":40,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.47},{"dt":1604959200,"temp":37.58,"feels_like":30.24,"pressure":1008,"humidity":79,"dew_point":31.71,"clouds":95,"visibility":1601,"wind_speed":6.62,"wind_deg":51,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.51},{"dt":1604962800,"temp":36.27,"feels_like":28.33,"pressure":1009,"humidity":86,"dew_point":32.61,"clouds":96,"visibility":169,"wind_speed":7.87,"wind_deg":46,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.71},{"dt":1604966400,"temp":34.72,"feels_like":24.64,"pressure":1011,"humidity":88,"dew_point":30.92,"clouds":97,"visibility":207,"wind_speed":11.43,"wind_deg":30,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.71},{"dt":1604970000,"temp":32.11,"feels_like":21.42,"pressure":1012,"humidity":96,"dew_point":29.19,"clouds":100,"visibility":194,"wind_speed":12.41,"wind_deg":9,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.79},{"dt":1604973600,"temp":31.26,"feels_like":23.23,"pressure":1013,"humidity":97,"dew_point":28.38,"clouds":100,"visibility":1456,"wind_speed":7.54,"wind_deg":66,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.88},{"dt":1604977200,"temp":30.94,"feels_like":23.43,"pressure":1014,"humidity":96,"dew_point":27.68,"clouds":100,"visibility":1790,"wind_speed":6.46,"wind_deg":36,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.79},{"dt":1604980800,"temp":30.85,"feels_like":24.17,"pressure":1014,"humidity":96,"dew_point":27.07,"clouds":100,"visibility":6435,"wind_speed":4.97,"wind_deg":59,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.79},{"dt":1604984400,"temp":31.15,"feels_like":25.03,"pressure":1015,"humidity":95,"dew_point":26.37,"clouds":100,"visibility":10000,"wind_speed":4,"wind_deg":23,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.75},{"dt":1604988000,"temp":31.21,"feels_like":24.57,"pressure":1015,"humidity":95,"dew_point":26.19,"clouds":100,"visibility":10000,"wind_speed":4.92,"wind_deg":76,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.75},{"dt":1604991600,"temp":31.33,"feels_like":25.12,"pressure":1015,"humidity":94,"dew_point":25.77,"clouds":100,"visibility":10000,"wind_speed":4.14,"wind_deg":80,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.04},{"dt":1604995200,"temp":31.8,"feels_like":26.2,"pressure":1015,"humidity":93,"dew_point":25.54,"clouds":100,"visibility":10000,"wind_speed":3.11,"wind_deg":61,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1604998800,"temp":31.23,"feels_like":25.47,"pressure":1015,"humidity":94,"dew_point":25.2,"clouds":74,"visibility":10000,"wind_speed":3.31,"wind_deg":75,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1605002400,"temp":31.32,"feels_like":26.11,"pressure":1015,"humidity":93,"dew_point":24.84,"clouds":56,"visibility":10000,"wind_speed":2.28,"wind_deg":133,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1605006000,"temp":31.84,"feels_like":26.62,"pressure":1016,"humidity":93,"dew_point":24.64,"clouds":54,"visibility":10000,"wind_speed":2.44,"wind_deg":181,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.01},{"dt":1605009600,"temp":32.22,"feels_like":26.29,"pressure":1016,"humidity":91,"dew_point":23.9,"clouds":57,"visibility":10000,"wind_speed":3.65,"wind_deg":188,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1605013200,"temp":32.07,"feels_like":25.52,"pressure":1016,"humidity":89,"dew_point":21.45,"clouds":0,"visibility":10000,"wind_speed":4.61,"wind_deg":197,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605016800,"temp":31.87,"feels_like":24.66,"pressure":1016,"humidity":86,"dew_point":18.64,"clouds":0,"visibility":10000,"wind_speed":5.53,"wind_deg":203,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605020400,"temp":33.64,"feels_like":27.03,"pressure":1015,"humidity":79,"dew_point":17.01,"clouds":0,"visibility":10000,"wind_speed":4.38,"wind_deg":217,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605024000,"temp":36.63,"feels_like":29.32,"pressure":1014,"humidity":69,"dew_point":15.94,"clouds":0,"visibility":10000,"wind_speed":5.53,"wind_deg":205,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605027600,"temp":40.3,"feels_like":32.02,"pressure":1012,"humidity":57,"dew_point":11.97,"clouds":0,"visibility":10000,"wind_speed":7,"wind_deg":205,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605031200,"temp":43.03,"feels_like":36.39,"pressure":1011,"humidity":49,"dew_point":8.87,"clouds":0,"visibility":10000,"wind_speed":3.87,"wind_deg":202,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605034800,"temp":45.12,"feels_like":38.93,"pressure":1009,"humidity":45,"dew_point":7.86,"clouds":0,"visibility":10000,"wind_speed":3.04,"wind_deg":179,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605038400,"temp":46.92,"feels_like":41.85,"pressure":1008,"humidity":41,"dew_point":7.57,"clouds":6,"visibility":10000,"wind_speed":0.94,"wind_deg":276,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605042000,"temp":47.43,"feels_like":40.51,"pressure":1008,"humidity":41,"dew_point":8.02,"clouds":29,"visibility":10000,"wind_speed":4.29,"wind_deg":340,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"pop":0},{"dt":1605045600,"temp":47.16,"feels_like":39.4,"pressure":1009,"humidity":42,"dew_point":9.14,"clouds":47,"visibility":10000,"wind_speed":5.88,"wind_deg":334,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"pop":0},{"dt":1605049200,"temp":46.42,"feels_like":39.11,"pressure":1010,"humidity":44,"dew_point":10.74,"clouds":58,"visibility":10000,"wind_speed":5.17,"wind_deg":317,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"pop":0},{"dt":1605052800,"temp":44.71,"feels_like":38.21,"pressure":1012,"humidity":48,"dew_point":12.81,"clouds":61,"visibility":10000,"wind_speed":3.85,"wind_deg":297,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1605056400,"temp":43.75,"feels_like":37.85,"pressure":1014,"humidity":50,"dew_point":11.97,"clouds":6,"visibility":10000,"wind_speed":2.8,"wind_deg":298,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605060000,"temp":42.13,"feels_like":36.36,"pressure":1015,"humidity":53,"dew_point":11.75,"clouds":3,"visibility":10000,"wind_speed":2.55,"wind_deg":247,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605063600,"temp":40.82,"feels_like":34.88,"pressure":1016,"humidity":56,"dew_point":12.18,"clouds":4,"visibility":10000,"wind_speed":2.89,"wind_deg":224,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605067200,"temp":39.52,"feels_like":33.57,"pressure":1017,"humidity":59,"dew_point":12.76,"clouds":3,"visibility":10000,"wind_speed":2.91,"wind_deg":201,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605070800,"temp":38.82,"feels_like":33.19,"pressure":1018,"humidity":61,"dew_point":13.19,"clouds":2,"visibility":10000,"wind_speed":2.37,"wind_deg":198,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605074400,"temp":38.12,"feels_like":32.9,"pressure":1019,"humidity":63,"dew_point":13.75,"clouds":2,"visibility":10000,"wind_speed":1.66,"wind_deg":226,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605078000,"temp":37.22,"feels_like":32.81,"pressure":1019,"humidity":66,"dew_point":13.93,"clouds":0,"visibility":10000,"wind_speed":0.27,"wind_deg":19,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605081600,"temp":36.28,"feels_like":31.71,"pressure":1020,"humidity":68,"dew_point":13.69,"clouds":0,"visibility":10000,"wind_speed":0.51,"wind_deg":47,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605085200,"temp":35.6,"feels_like":30.87,"pressure":1020,"humidity":70,"dew_point":13.51,"clouds":0,"visibility":10000,"wind_speed":0.83,"wind_deg":107,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605088800,"temp":35.04,"feels_like":29.77,"pressure":1020,"humidity":71,"dew_point":13.17,"clouds":0,"visibility":10000,"wind_speed":1.74,"wind_deg":177,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605092400,"temp":34.56,"feels_like":28.87,"pressure":1020,"humidity":72,"dew_point":12.72,"clouds":0,"visibility":10000,"wind_speed":2.44,"wind_deg":185,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605096000,"temp":34.07,"feels_like":27.79,"pressure":1020,"humidity":73,"dew_point":12.25,"clouds":0,"visibility":10000,"wind_speed":3.49,"wind_deg":185,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605099600,"temp":33.53,"feels_like":27.84,"pressure":1020,"humidity":74,"dew_point":11.8,"clouds":0,"visibility":10000,"wind_speed":2.37,"wind_deg":226,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605103200,"temp":33.3,"feels_like":27.9,"pressure":1020,"humidity":75,"dew_point":11.32,"clouds":0,"visibility":10000,"wind_speed":1.88,"wind_deg":246,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605106800,"temp":35.02,"feels_like":29.7,"pressure":1019,"humidity":69,"dew_point":10.8,"clouds":0,"visibility":10000,"wind_speed":1.7,"wind_deg":244,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605110400,"temp":37.4,"feels_like":31.87,"pressure":1017,"humidity":62,"dew_point":10.36,"clouds":0,"visibility":10000,"wind_speed":1.97,"wind_deg":190,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605114000,"temp":39.92,"feels_like":34.16,"pressure":1016,"humidity":56,"dew_point":9.64,"clouds":0,"visibility":10000,"wind_speed":2.37,"wind_deg":159,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0}],"daily":[{"dt":1604944800,"sunrise":1604929101,"sunset":1604965761,"temp":{"day":32.7,"min":31.05,"max":45.77,"night":31.23,"eve":34.29,"morn":39.07},"feels_like":{"day":23.65,"night":24.58,"eve":23.99,"morn":26.98},"pressure":1011,"humidity":66,"dew_point":23.68,"wind_speed":7.67,"wind_deg":12,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"clouds":90,"pop":0.79,"uvi":2.5},{"dt":1605031200,"sunrise":1605015570,"sunset":1605052105,"temp":{"day":43.03,"min":31.23,"max":47.43,"night":38.12,"eve":44.71,"morn":32.22},"feels_like":{"day":36.39,"night":32.9,"eve":38.21,"morn":26.29},"pressure":1011,"humidity":49,"dew_point":8.87,"wind_speed":3.87,"wind_deg":202,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.01,"uvi":2.36},{"dt":1605117600,"sunrise":1605102040,"sunset":1605138452,"temp":{"day":42.35,"min":34.07,"max":47.32,"night":37.26,"eve":44.49,"morn":34.07},"feels_like":{"day":35.85,"night":31.8,"eve":36.91,"morn":27.79},"pressure":1014,"humidity":49,"dew_point":7.63,"wind_speed":3.49,"wind_deg":140,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.04,"uvi":2.35},{"dt":1605204000,"sunrise":1605188509,"sunset":1605224799,"temp":{"day":43.9,"min":34,"max":49.05,"night":40.39,"eve":46.24,"morn":34},"feels_like":{"day":36.23,"night":34.86,"eve":39.94,"morn":27.75},"pressure":1017,"humidity":47,"dew_point":7.92,"wind_speed":5.66,"wind_deg":110,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":1,"pop":0,"uvi":2.26},{"dt":1605290400,"sunrise":1605274979,"sunset":1605311149,"temp":{"day":48.09,"min":37.51,"max":52.74,"night":43.68,"eve":50.13,"morn":37.51},"feels_like":{"day":42.8,"night":38.26,"eve":41.09,"morn":31.87},"pressure":1011,"humidity":44,"dew_point":14.56,"wind_speed":1.9,"wind_deg":105,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"clouds":27,"pop":0.04,"uvi":2.31},{"dt":1605376800,"sunrise":1605361448,"sunset":1605397500,"temp":{"day":51.12,"min":39.99,"max":57.7,"night":43.92,"eve":52.18,"morn":39.99},"feels_like":{"day":45.73,"night":37.8,"eve":44.76,"morn":32.88},"pressure":1007,"humidity":39,"dew_point":15.58,"wind_speed":2.01,"wind_deg":315,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"clouds":27,"pop":0.07,"uvi":2.31},{"dt":1605463200,"sunrise":1605447917,"sunset":1605483853,"temp":{"day":47.77,"min":38.1,"max":51.87,"night":40.37,"eve":46.35,"morn":38.1},"feels_like":{"day":37.53,"night":34.05,"eve":37.89,"morn":31.82},"pressure":1021,"humidity":30,"dew_point":-10.55,"wind_speed":8.97,"wind_deg":298,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0.04,"uvi":2.58},{"dt":1605549600,"sunrise":1605534385,"sunset":1605570208,"temp":{"day":53.35,"min":37.83,"max":59.61,"night":46.81,"eve":53.98,"morn":37.83},"feels_like":{"day":47.52,"night":40.44,"eve":47.91,"morn":31.17},"pressure":1012,"humidity":29,"dew_point":0.61,"wind_speed":1.81,"wind_deg":172,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":10,"pop":0,"uvi":2.53}]}'
+  recorded_at: Mon, 09 Nov 2020 18:59:48 GMT
+- request:
+    method: get
+    uri: https://www.hikingproject.com/data/get-trails?key=HIKING_API&lat=39.738453&lon=-104.984853
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:59:48 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private
+      Pragma:
+      - no-cache
+      X-Ap-Request-Id:
+      - c1254c5a-c9ae-48d3-ba29-11213f78e539
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2143'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "trails": [
+                {
+                    "id": 7011192,
+                    "name": "Boulder Skyline Traverse",
+                    "type": "Recommended Route",
+                    "summary": "The classic long mountain route in Boulder.",
+                    "difficulty": "black",
+                    "stars": 4.7,
+                    "starVotes": 93,
+                    "location": "Superior, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7011192\/boulder-skyline-traverse",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_sqsmall_1555092747.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_small_1555092747.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_smallMed_1555092747.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_medium_1555092747.jpg",
+                    "length": 17.3,
+                    "ascent": 5446,
+                    "descent": -5524,
+                    "high": 8446,
+                    "low": 5424,
+                    "longitude": -105.2582,
+                    "latitude": 39.9388,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-09-16 14:37:11"
+                },
+                {
+                    "id": 7000130,
+                    "name": "Bear Peak Out and Back",
+                    "type": "Recommended Route",
+                    "summary": "A must-do hike for Boulder locals and visitors alike!",
+                    "difficulty": "black",
+                    "stars": 4.6,
+                    "starVotes": 122,
+                    "location": "Boulder, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7000130\/bear-peak-out-and-back",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005382_sqsmall_1554312030.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005382_small_1554312030.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005382_smallMed_1554312030.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005382_medium_1554312030.jpg",
+                    "length": 5.7,
+                    "ascent": 2541,
+                    "descent": -2540,
+                    "high": 8342,
+                    "low": 6103,
+                    "longitude": -105.2755,
+                    "latitude": 39.9787,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "",
+                    "conditionDate": "2020-10-22 13:00:06"
+                },
+                {
+                    "id": 7004226,
+                    "name": "Sunshine Lion's Lair Loop",
+                    "type": "Recommended Route",
+                    "summary": "Great Mount Sanitas views are the reward for this gentler loop in Sunshine Canyon.",
+                    "difficulty": "blue",
+                    "stars": 4.5,
+                    "starVotes": 119,
+                    "location": "Boulder, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7004226\/sunshine-lions-lair-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_sqsmall_1555092747.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_small_1555092747.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_smallMed_1555092747.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_medium_1555092747.jpg",
+                    "length": 5.3,
+                    "ascent": 1261,
+                    "descent": -1282,
+                    "high": 6800,
+                    "low": 5530,
+                    "longitude": -105.2979,
+                    "latitude": 40.02,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-10-19 15:37:52"
+                },
+                {
+                    "id": 7011191,
+                    "name": "Green Mountain via Ranger\/Saddle Rock Loop",
+                    "type": "Recommended Route",
+                    "summary": "A loop with a variety of terrain, a lot of climbing, and great views of Boulder.",
+                    "difficulty": "black",
+                    "stars": 4.5,
+                    "starVotes": 89,
+                    "location": "Boulder, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7011191\/green-mountain-via-rangersaddle-rock-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7000517_sqsmall_1554159394.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7000517_small_1554159394.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7000517_smallMed_1554159394.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7000517_medium_1554159394.jpg",
+                    "length": 4.9,
+                    "ascent": 2305,
+                    "descent": -2277,
+                    "high": 8099,
+                    "low": 5806,
+                    "longitude": -105.2928,
+                    "latitude": 39.9975,
+                    "conditionStatus": "Minor Issues",
+                    "conditionDetails": "Snowy, Icy - Some snow\/ice in sections of the trail. Traction recommended!",
+                    "conditionDate": "2020-11-03 16:01:11"
+                },
+                {
+                    "id": 7002439,
+                    "name": "Walker Ranch",
+                    "type": "Recommended Route",
+                    "summary": "An awesome and challenging hike near Boulder with great scenery.",
+                    "difficulty": "blueBlack",
+                    "stars": 4.5,
+                    "starVotes": 139,
+                    "location": "Coal Creek, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7002439\/walker-ranch",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039625_sqsmall_1555092312.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039625_small_1555092312.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039625_smallMed_1555092312.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039625_medium_1555092312.jpg",
+                    "length": 7.6,
+                    "ascent": 1594,
+                    "descent": -1585,
+                    "high": 7335,
+                    "low": 6439,
+                    "longitude": -105.3378,
+                    "latitude": 39.9511,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-10-12 13:48:51"
+                },
+                {
+                    "id": 7004682,
+                    "name": "Royal Arch Out and Back",
+                    "type": "Recommended Route",
+                    "summary": "A classic Boulder hike to a natural arch with great views.",
+                    "difficulty": "black",
+                    "stars": 4.4,
+                    "starVotes": 158,
+                    "location": "Boulder, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7004682\/royal-arch-out-and-back",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002679_sqsmall_1554226731.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002679_small_1554226731.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002679_smallMed_1554226731.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002679_medium_1554226731.jpg",
+                    "length": 3.3,
+                    "ascent": 1311,
+                    "descent": -1312,
+                    "high": 6917,
+                    "low": 5691,
+                    "longitude": -105.283,
+                    "latitude": 39.9997,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Mostly Dry",
+                    "conditionDate": "2020-10-18 17:03:19"
+                },
+                {
+                    "id": 7000000,
+                    "name": "Mount Sanitas Loop",
+                    "type": "Recommended Route",
+                    "summary": "Very popular and scenic loop right from the edge of town.",
+                    "difficulty": "blueBlack",
+                    "stars": 4.1,
+                    "starVotes": 110,
+                    "location": "Boulder, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7000000\/mount-sanitas-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_sqsmall_1555092747.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_small_1555092747.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_smallMed_1555092747.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7039883_medium_1555092747.jpg",
+                    "length": 3.2,
+                    "ascent": 1281,
+                    "descent": -1280,
+                    "high": 6780,
+                    "low": 5521,
+                    "longitude": -105.2977,
+                    "latitude": 40.0202,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-10-14 19:04:37"
+                },
+                {
+                    "id": 7004911,
+                    "name": "Mt. Galbraith Park Loop",
+                    "type": "Recommended Route",
+                    "summary": "A fun singletrack lollipop loop up and around Mt. Galbraith's peak with views in all directions.",
+                    "difficulty": "blueBlack",
+                    "stars": 4,
+                    "starVotes": 89,
+                    "location": "Golden, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7004911\/mt-galbraith-park-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_sqsmall_1554311310.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_small_1554311310.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_smallMed_1554311310.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7005037_medium_1554311310.jpg",
+                    "length": 4.3,
+                    "ascent": 918,
+                    "descent": -919,
+                    "high": 7192,
+                    "low": 6289,
+                    "longitude": -105.2541,
+                    "latitude": 39.7736,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-11-07 12:24:44"
+                },
+                {
+                    "id": 7001019,
+                    "name": "Betasso Preserve",
+                    "type": "Recommended Route",
+                    "summary": "This hike is easily accessible from Boulder and offers amazing singletrack with beautiful views.",
+                    "difficulty": "blue",
+                    "stars": 4.2,
+                    "starVotes": 75,
+                    "location": "Boulder, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7001019\/betasso-preserve",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029200_sqsmall_1554920151.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029200_small_1554920151.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029200_smallMed_1554920151.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7029200_medium_1554920151.jpg",
+                    "length": 6.7,
+                    "ascent": 776,
+                    "descent": -778,
+                    "high": 6575,
+                    "low": 6178,
+                    "longitude": -105.3446,
+                    "latitude": 40.0164,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "",
+                    "conditionDate": "2020-10-17 19:04:26"
+                },
+                {
+                    "id": 7000141,
+                    "name": "North Table Loop Trail",
+                    "type": "Recommended Route",
+                    "summary": "A rolling grassland trail that circumnavigates North Table Mountain.",
+                    "difficulty": "blue",
+                    "stars": 3.9,
+                    "starVotes": 87,
+                    "location": "Golden, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7000141\/north-table-loop-trail",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7074404_sqsmall_1604530560.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7074404_small_1604530560.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7074404_smallMed_1604530560.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7074404_medium_1604530560.jpg",
+                    "length": 7.7,
+                    "ascent": 1058,
+                    "descent": -1056,
+                    "high": 6486,
+                    "low": 5851,
+                    "longitude": -105.2297,
+                    "latitude": 39.782,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "",
+                    "conditionDate": "2020-11-04 15:49:12"
+                }
+            ],
+            "success": 1
+        }
+  recorded_at: Mon, 09 Nov 2020 18:59:49 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=denver,co&key=MAPQUEST_API&to=Superior,%20Colorado
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 18:59:49 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=5765FFC4E194B05AF6FEBD85821D7F91; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 09 Nov 2020 18:59:49 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJoYXNUb2xsUm9hZCI6ZmFsc2UsImhhc0JyaWRnZSI6dHJ1ZSwiYm91bmRpbmdCb3giOnsibHIiOnsibG5nIjotMTA0Ljk4MjMyMywibGF0IjozOS43Mzg0NTN9LCJ1bCI6eyJsbmciOi0xMDUuMTY2Nzc5LCJsYXQiOjM5Ljk1ODE2fX0sImRpc3RhbmNlIjoyMy4wMDgsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNIaWdod2F5Ijp0cnVlLCJjb21wdXRlZFdheXBvaW50cyI6W10sInJvdXRlRXJyb3IiOnsiZXJyb3JDb2RlIjotNDAwLCJtZXNzYWdlIjoiIn0sImZvcm1hdHRlZFRpbWUiOiIwMDoyNjo1NSIsInNlc3Npb25JZCI6IjVmYTk5MWE1LTAyZDAtNjc1MC0wMmI0LTMyMjEtMTI0NmJlNmNmN2U5IiwiaGFzQWNjZXNzUmVzdHJpY3Rpb24iOmZhbHNlLCJyZWFsVGltZSI6MTY5NSwiaGFzU2Vhc29uYWxDbG9zdXJlIjpmYWxzZSwiaGFzQ291bnRyeUNyb3NzIjpmYWxzZSwiZnVlbFVzZWQiOjEuMDYsImxlZ3MiOlt7Imhhc1RvbGxSb2FkIjpmYWxzZSwiaGFzQnJpZGdlIjp0cnVlLCJkZXN0TmFycmF0aXZlIjoiUHJvY2VlZCB0byBTVVBFUklPUiwgQ08uIiwiZGlzdGFuY2UiOjIzLjAwOCwiaGFzVGltZWRSZXN0cmljdGlvbiI6ZmFsc2UsImhhc1R1bm5lbCI6ZmFsc2UsImhhc0hpZ2h3YXkiOnRydWUsImluZGV4IjowLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MjY6NTUiLCJvcmlnSW5kZXgiOjIsImhhc0FjY2Vzc1Jlc3RyaWN0aW9uIjpmYWxzZSwiaGFzU2Vhc29uYWxDbG9zdXJlIjpmYWxzZSwiaGFzQ291bnRyeUNyb3NzIjpmYWxzZSwicm9hZEdyYWRlU3RyYXRlZ3kiOltbXV0sImRlc3RJbmRleCI6NiwidGltZSI6MTYxNSwiaGFzVW5wYXZlZCI6ZmFsc2UsIm9yaWdOYXJyYXRpdmUiOiJHbyB3ZXN0IG9uIEUgQ29sZmF4IEF2ZS9JLTcwIEJ1cyBXL1VTLTQwIFcvVVMtMjg3IE4uIiwibWFuZXV2ZXJzIjpbeyJkaXN0YW5jZSI6MC4xMzUsInN0cmVldHMiOlsiRSAxNHRoIEF2ZSJdLCJuYXJyYXRpdmUiOiJTdGFydCBvdXQgZ29pbmcgZWFzdCBvbiBFIDE0dGggQXZlIHRvd2FyZCBOIEdyYW50IFN0LiIsInR1cm5UeXBlIjowLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNC45ODQ4NTYsImxhdCI6MzkuNzM4NDUzfSwiaW5kZXgiOjAsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoyMyIsImRpcmVjdGlvbk5hbWUiOiJFYXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUFFVRVNUX0FQSSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5LjczODQ1MjkxMTM3Njk1LC0xMDQuOTg0ODU1NjUxODU1NDd8bWFya2VyLTF8fDM5LjczODQ1MjkxMTM3Njk1LC0xMDQuOTgyMzIyNjkyODcxMXxtYXJrZXItMnx8JmNlbnRlcj0zOS43Mzg0NTI5MTEzNzY5NSwtMTA0Ljk4MzU4OTE3MjM2MzI4JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTEzJnJhbmQ9ODkzOTkzNSZzZXNzaW9uPTVmYTk5MWE1LTAyZDAtNjc1MC0wMmI0LTMyMjEtMTI0NmJlNmNmN2U5IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjowLCJ0aW1lIjoyMywiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL2ljb24tZGlycy1zdGFydF9zbS5naWYiLCJkaXJlY3Rpb24iOjh9LHsiZGlzdGFuY2UiOjAuMTEsInN0cmVldHMiOlsiTiBMb2dhbiBTdCJdLCJuYXJyYXRpdmUiOiJUdXJuIGxlZnQgb250byBOIExvZ2FuIFN0LiIsInR1cm5UeXBlIjo2LCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNC45ODIzMjMsImxhdCI6MzkuNzM4NDUzfSwiaW5kZXgiOjEsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoyMSIsImRpcmVjdGlvbk5hbWUiOiJOb3J0aCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1NQVBRVUVTVF9BUEkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43Mzg0NTI5MTEzNzY5NSwtMTA0Ljk4MjMyMjY5Mjg3MTF8bWFya2VyLTJ8fDM5Ljc0MDA0NzQ1NDgzMzk4NCwtMTA0Ljk4MjMzNzk1MTY2MDE2fG1hcmtlci0zfHwmY2VudGVyPTM5LjczOTI1MDE4MzEwNTQ3LC0xMDQuOTgyMzMwMzIyMjY1NjImZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTImcmFuZD04OTM5OTM1JnNlc3Npb249NWZhOTkxYTUtMDJkMC02NzUwLTAyYjQtMzIyMS0xMjQ2YmU2Y2Y3ZTkiLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjIxLCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfbGVmdF9zbS5naWYiLCJkaXJlY3Rpb24iOjF9LHsiZGlzdGFuY2UiOjEuNDgyLCJzdHJlZXRzIjpbIkUgQ29sZmF4IEF2ZSIsIkktNzAgQnVzIFciLCJVUy00MCBXIiwiVVMtMjg3IE4iXSwibmFycmF0aXZlIjoiVHVybiBsZWZ0IG9udG8gRSBDb2xmYXggQXZlL0ktNzAgQnVzIFcvVVMtNDAgVy9VUy0yODcgTi4iLCJ0dXJuVHlwZSI6Niwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTgyMzM4LCJsYXQiOjM5Ljc0MDA0N30sImluZGV4IjoyLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDM6MTIiLCJkaXJlY3Rpb25OYW1lIjoiV2VzdCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOlt7ImV4dHJhVGV4dCI6IiIsInRleHQiOiI3MCIsInR5cGUiOjUsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnM1LnBuZz9uPTcwJmQ9V0VTVCIsImRpcmVjdGlvbiI6N30seyJleHRyYVRleHQiOiIiLCJ0ZXh0IjoiNDAiLCJ0eXBlIjoyLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMi5wbmc/bj00MCZkPVdFU1QiLCJkaXJlY3Rpb24iOjd9LHsiZXh0cmFUZXh0IjoiIiwidGV4dCI6IjI4NyIsInR5cGUiOjIsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnMyLnBuZz9uPTI4NyZkPU5PUlRIIiwiZGlyZWN0aW9uIjoxfV0sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUFFVRVNUX0FQSSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljc0MDA0NzQ1NDgzMzk4NCwtMTA0Ljk4MjMzNzk1MTY2MDE2fG1hcmtlci0zfHwzOS43NDAzNDUwMDEyMjA3LC0xMDUuMDA5NjgxNzAxNjYwMTZ8bWFya2VyLTR8fCZjZW50ZXI9MzkuNzQwMTk2MjI4MDI3MzQ0LC0xMDQuOTk2MDA5ODI2NjYwMTYmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTAmcmFuZD04OTM5OTM1JnNlc3Npb249NWZhOTkxYTUtMDJkMC02NzUwLTAyYjQtMzIyMS0xMjQ2YmU2Y2Y3ZTkiLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjEwMjQsInRpbWUiOjE5MiwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX2xlZnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjowLjEwMSwic3RyZWV0cyI6W10sIm5hcnJhdGl2ZSI6IlRha2UgdGhlIHJhbXAgdG93YXJkIEktMjUvRnQgQ29sbGlucy9Db2xvIFNwZ3MuIiwidHVyblR5cGUiOjEyLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNS4wMDk2ODIsImxhdCI6MzkuNzQwMzQ1fSwiaW5kZXgiOjMsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxMiIsImRpcmVjdGlvbk5hbWUiOiJXZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUFFVRVNUX0FQSSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljc0MDM0NTAwMTIyMDcsLTEwNS4wMDk2ODE3MDE2NjAxNnxtYXJrZXItNHx8MzkuNzQwNTcwMDY4MzU5Mzc1LC0xMDUuMDExNTU4NTMyNzE0ODR8bWFya2VyLTV8fCZjZW50ZXI9MzkuNzQwNDU3NTM0NzkwMDQsLTEwNS4wMTA2MjAxMTcxODc1JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTE0JnJhbmQ9ODkzOTkzNSZzZXNzaW9uPTVmYTk5MWE1LTAyZDAtNjc1MC0wMmI0LTMyMjEtMTI0NmJlNmNmN2U5IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjoxMDI0LCJ0aW1lIjoxMiwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX3JhbXBfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjo2LjM5MSwic3RyZWV0cyI6WyJJLTI1IE4iLCJVUy04NyBOIl0sIm5hcnJhdGl2ZSI6Ik1lcmdlIG9udG8gSS0yNSBOL1VTLTg3IE4gdG93YXJkIEZ0IENvbGxpbnMuIiwidHVyblR5cGUiOjEwLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNS4wMTE1NTksImxhdCI6MzkuNzQwNTd9LCJpbmRleCI6NCwiZm9ybWF0dGVkVGltZSI6IjAwOjA3OjI5IiwiZGlyZWN0aW9uTmFtZSI6Ik5vcnRoIiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W3siZXh0cmFUZXh0IjoiIiwidGV4dCI6IjI1IiwidHlwZSI6MSwidXJsIjoiaHR0cDovL2ljb25zLm1xY2RuLmNvbS9pY29ucy9yczEucG5nP249MjUmZD1OT1JUSCIsImRpcmVjdGlvbiI6MX0seyJleHRyYVRleHQiOiIiLCJ0ZXh0IjoiODciLCJ0eXBlIjoyLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMi5wbmc/bj04NyZkPU5PUlRIIiwiZGlyZWN0aW9uIjoxfV0sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUFFVRVNUX0FQSSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljc0MDU3MDA2ODM1OTM3NSwtMTA1LjAxMTU1ODUzMjcxNDg0fG1hcmtlci01fHwzOS44MjExMDIxNDIzMzM5ODQsLTEwNC45ODI1MTM0Mjc3MzQzOHxtYXJrZXItNnx8JmNlbnRlcj0zOS43ODA4MzYxMDUzNDY2OCwtMTA0Ljk5NzAzNTk4MDIyNDYxJmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTcmcmFuZD04OTM5OTM1JnNlc3Npb249NWZhOTkxYTUtMDJkMC02NzUwLTAyYjQtMzIyMS0xMjQ2YmU2Y2Y3ZTkiLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjExNTIsInRpbWUiOjQ0OSwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX21lcmdlX3JpZ2h0X3NtLmdpZiIsImRpcmVjdGlvbiI6MX0seyJkaXN0YW5jZSI6MTQuMTEzLCJzdHJlZXRzIjpbIlVTLTM2IFciXSwibmFycmF0aXZlIjoiTWVyZ2Ugb250byBVUy0zNiBXIHZpYSBFWElUIDIxN0Egb24gdGhlIGxlZnQgdG93YXJkIEJvdWxkZXIuIiwidHVyblR5cGUiOjExLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNC45ODI1MTMsImxhdCI6MzkuODIxMTAyfSwiaW5kZXgiOjUsImZvcm1hdHRlZFRpbWUiOiIwMDoxMzo0NiIsImRpcmVjdGlvbk5hbWUiOiJXZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W3siZXh0cmFUZXh0IjoiIiwidGV4dCI6IjM2IiwidHlwZSI6MiwidXJsIjoiaHR0cDovL2ljb25zLm1xY2RuLmNvbS9pY29ucy9yczIucG5nP249MzYmZD1XRVNUIiwiZGlyZWN0aW9uIjo3fSx7ImV4dHJhVGV4dCI6IiIsInRleHQiOiIyMTdBIiwidHlwZSI6MTAwMSwidXJsIjoiaHR0cDovL2ljb25zLm1xY2RuLmNvbS9pY29ucy9yczEwMDEucG5nP249MjE3QSZkPUxFRlQiLCJkaXJlY3Rpb24iOjB9XSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9TUFQUVVFU1RfQVBJJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuODIxMTAyMTQyMzMzOTg0LC0xMDQuOTgyNTEzNDI3NzM0Mzh8bWFya2VyLTZ8fDM5Ljk1NTYxOTgxMjAxMTcyLC0xMDUuMTYwNzUxMzQyNzczNDR8bWFya2VyLTd8fCZjZW50ZXI9MzkuODg4MzYwOTc3MTcyODUsLTEwNS4wNzE2MzIzODUyNTM5JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTYmcmFuZD04OTM5OTM1JnNlc3Npb249NWZhOTkxYTUtMDJkMC02NzUwLTAyYjQtMzIyMS0xMjQ2YmU2Y2Y3ZTkiLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjExNTIsInRpbWUiOjgyNiwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX21lcmdlX2xlZnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjowLjMyNywic3RyZWV0cyI6W10sIm5hcnJhdGl2ZSI6IlRha2UgdGhlIE1jQ2FzbGluIEJsdmQgZXhpdCB0b3dhcmQgQ08tMTcwIFcvTG91aXN2aWxsZS9TdXBlcmlvci4iLCJ0dXJuVHlwZSI6MTQsInN0YXJ0UG9pbnQiOnsibG5nIjotMTA1LjE2MDc1MSwibGF0IjozOS45NTU2Mn0sImluZGV4Ijo2LCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MzQiLCJkaXJlY3Rpb25OYW1lIjoiTm9ydGh3ZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUFFVRVNUX0FQSSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljk1NTYxOTgxMjAxMTcyLC0xMDUuMTYwNzUxMzQyNzczNDR8bWFya2VyLTd8fDM5Ljk1ODE2MDQwMDM5MDYyNSwtMTA1LjE2NTM5MDAxNDY0ODQ0fG1hcmtlci04fHwmY2VudGVyPTM5Ljk1Njg5MDEwNjIwMTE3LC0xMDUuMTYzMDcwNjc4NzEwOTQmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTImcmFuZD04OTM5OTM1JnNlc3Npb249NWZhOTkxYTUtMDJkMC02NzUwLTAyYjQtMzIyMS0xMjQ2YmU2Y2Y3ZTkiLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjM0LCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfZ3JfZXhpdHJpZ2h0X3NtLmdpZiIsImRpcmVjdGlvbiI6Mn0seyJkaXN0YW5jZSI6MC4yODcsInN0cmVldHMiOlsiUyBNY0Nhc2xpbiBCbHZkIl0sIm5hcnJhdGl2ZSI6IlR1cm4gc2xpZ2h0IGxlZnQgb250byBTIE1jQ2FzbGluIEJsdmQuIiwidHVyblR5cGUiOjcsInN0YXJ0UG9pbnQiOnsibG5nIjotMTA1LjE2NTM5LCJsYXQiOjM5Ljk1ODE2fSwiaW5kZXgiOjcsImZvcm1hdHRlZFRpbWUiOiIwMDowMDo0MiIsImRpcmVjdGlvbk5hbWUiOiJTb3V0aCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1NQVBRVUVTVF9BUEkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS45NTgxNjA0MDAzOTA2MjUsLTEwNS4xNjUzOTAwMTQ2NDg0NHxtYXJrZXItOHx8MzkuOTU0MDYzNDE1NTI3MzQ0LC0xMDUuMTY1NjE4ODk2NDg0Mzh8bWFya2VyLTl8fCZjZW50ZXI9MzkuOTU2MTExOTA3OTU4OTg0LC0xMDUuMTY1NTA0NDU1NTY2NCZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xMSZyYW5kPTg5Mzk5MzUmc2Vzc2lvbj01ZmE5OTFhNS0wMmQwLTY3NTAtMDJiNC0zMjIxLTEyNDZiZTZjZjdlOSIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MTAyNCwidGltZSI6NDIsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9yc19zbGlnaHRfbGVmdF9zbS5naWYiLCJkaXJlY3Rpb24iOjR9LHsiZGlzdGFuY2UiOjAuMDYyLCJzdHJlZXRzIjpbIkUgQ29hbCBDcmVlayBEciJdLCJuYXJyYXRpdmUiOiJUdXJuIHJpZ2h0IG9udG8gRSBDb2FsIENyZWVrIERyLiIsInR1cm5UeXBlIjoyLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNS4xNjU2MTksImxhdCI6MzkuOTU0MDYzfSwiaW5kZXgiOjgsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxNiIsImRpcmVjdGlvbk5hbWUiOiJXZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PU1BUFFVRVNUX0FQSSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljk1NDA2MzQxNTUyNzM0NCwtMTA1LjE2NTYxODg5NjQ4NDM4fG1hcmtlci05fHwzOS45NTQwNTE5NzE0MzU1NSwtMTA1LjE2Njc3ODU2NDQ1MzEyfG1hcmtlci0xMHx8JmNlbnRlcj0zOS45NTQwNTc2OTM0ODE0NDUsLTEwNS4xNjYxOTg3MzA0Njg3NSZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNSZyYW5kPTg5Mzk5MzUmc2Vzc2lvbj01ZmE5OTFhNS0wMmQwLTY3NTAtMDJiNC0zMjIxLTEyNDZiZTZjZjdlOSIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MCwidGltZSI6MTYsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9yc19yaWdodF9zbS5naWYiLCJkaXJlY3Rpb24iOjd9LHsiZGlzdGFuY2UiOjAsInN0cmVldHMiOltdLCJuYXJyYXRpdmUiOiJXZWxjb21lIHRvIFNVUEVSSU9SLCBDTy4iLCJ0dXJuVHlwZSI6LTEsInN0YXJ0UG9pbnQiOnsibG5nIjotMTA1LjE2Njc3OSwibGF0IjozOS45NTQwNTJ9LCJpbmRleCI6OSwiZm9ybWF0dGVkVGltZSI6IjAwOjAwOjAwIiwiZGlyZWN0aW9uTmFtZSI6IiIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjAsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9pY29uLWRpcnMtZW5kX3NtLmdpZiIsImRpcmVjdGlvbiI6MH1dLCJoYXNGZXJyeSI6ZmFsc2V9XSwib3B0aW9ucyI6eyJhcnRlcnlXZWlnaHRzIjpbXSwiY3ljbGluZ1JvYWRGYWN0b3IiOjEsInRpbWVUeXBlIjowLCJ1c2VUcmFmZmljIjpmYWxzZSwicmV0dXJuTGlua0RpcmVjdGlvbnMiOmZhbHNlLCJjb3VudHJ5Qm91bmRhcnlEaXNwbGF5Ijp0cnVlLCJlbmhhbmNlZE5hcnJhdGl2ZSI6ZmFsc2UsImxvY2FsZSI6ImVuX1VTIiwidHJ5QXZvaWRMaW5rSWRzIjpbXSwiZHJpdmluZ1N0eWxlIjoyLCJkb1JldmVyc2VHZW9jb2RlIjp0cnVlLCJnZW5lcmFsaXplIjotMSwibXVzdEF2b2lkTGlua0lkcyI6W10sInNpZGVPZlN0cmVldERpc3BsYXkiOnRydWUsInJvdXRlVHlwZSI6IkZBU1RFU1QiLCJhdm9pZFRpbWVkQ29uZGl0aW9ucyI6ZmFsc2UsInJvdXRlTnVtYmVyIjowLCJzaGFwZUZvcm1hdCI6InJhdyIsIm1heFdhbGtpbmdEaXN0YW5jZSI6LTEsImRlc3RpbmF0aW9uTWFuZXV2ZXJEaXNwbGF5Ijp0cnVlLCJ0cmFuc2ZlclBlbmFsdHkiOi0xLCJuYXJyYXRpdmVUeXBlIjoidGV4dCIsIndhbGtpbmdTcGVlZCI6LTEsInVyYmFuQXZvaWRGYWN0b3IiOi0xLCJzdGF0ZUJvdW5kYXJ5RGlzcGxheSI6dHJ1ZSwidW5pdCI6Ik0iLCJoaWdod2F5RWZmaWNpZW5jeSI6MjIsIm1heExpbmtJZCI6MCwibWFuZXV2ZXJQZW5hbHR5IjotMSwiYXZvaWRUcmlwSWRzIjpbXSwiZmlsdGVyWm9uZUZhY3RvciI6LTEsIm1hbm1hcHMiOiJ0cnVlIn0sImxvY2F0aW9ucyI6W3siZHJhZ1BvaW50IjpmYWxzZSwiZGlzcGxheUxhdExuZyI6eyJsbmciOi0xMDQuOTg0ODU2LCJsYXQiOjM5LjczODQ1M30sImFkbWluQXJlYTQiOiJEZW52ZXIgQ291bnR5IiwiYWRtaW5BcmVhNSI6IkRlbnZlciIsInBvc3RhbENvZGUiOiIiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWEzIjoiQ08iLCJ0eXBlIjoicyIsInNpZGVPZlN0cmVldCI6Ik4iLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwibGlua0lkIjozNTU4OTQxMCwic3RyZWV0IjoiIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImxhdExuZyI6eyJsbmciOi0xMDQuOTg0ODUzLCJsYXQiOjM5LjczODQ1M319LHsiZHJhZ1BvaW50IjpmYWxzZSwiZGlzcGxheUxhdExuZyI6eyJsbmciOi0xMDUuMTY2Nzc5LCJsYXQiOjM5Ljk1NDA1Mn0sImFkbWluQXJlYTQiOiJCb3VsZGVyIENvdW50eSIsImFkbWluQXJlYTUiOiJTdXBlcmlvciIsInBvc3RhbENvZGUiOiIiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWEzIjoiQ08iLCJ0eXBlIjoicyIsInNpZGVPZlN0cmVldCI6Ik4iLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwibGlua0lkIjo2MTg3OTc3Niwic3RyZWV0IjoiIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImxhdExuZyI6eyJsbmciOi0xMDUuMTY2NzgyLCJsYXQiOjM5Ljk1NDA1Mn19XSwidGltZSI6MTYxNSwiaGFzVW5wYXZlZCI6ZmFsc2UsImxvY2F0aW9uU2VxdWVuY2UiOlswLDFdLCJoYXNGZXJyeSI6ZmFsc2V9LCJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJpbWFnZUFsdFRleHQiOiLCqSAyMDIwIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsInRleHQiOiLCqSAyMDIwIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX19
+  recorded_at: Mon, 09 Nov 2020 18:59:49 GMT
+recorded_with: VCR 6.0.0
