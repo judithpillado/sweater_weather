@@ -4,9 +4,10 @@ RSpec.describe TrailService, :vcr do
   describe 'class methods' do
     it 'fetch_trail' do
 
-      coordinates = { lat: 39.738453, lon: -104.984853 }
+      latitude = 39.738453
+      longitude = -104.984853
 
-      json = TrailService.fetch_trail(coordinates)
+      json = TrailService.fetch_trail(latitude, longitude)
 
       expect(json).to be_a(Hash)
     end
