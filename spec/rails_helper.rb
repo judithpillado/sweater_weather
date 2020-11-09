@@ -77,6 +77,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.filter_sensitive_data('MAPQUEST_API') { ENV['MAPQUEST_API'] }
   config.filter_sensitive_data('WEATHER_API') { ENV['WEATHER_API'] }
+  config.filter_sensitive_data('PEXELS_API') { ENV['PEXELS_API'] }
   config.default_cassette_options = { re_record_interval: 7.days }
   config.configure_rspec_metadata!
 end
