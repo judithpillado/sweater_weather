@@ -19,6 +19,5 @@ describe 'Trails API' do
     expect(json[:data][:attributes][:trails][0][:summary]).to be_a(String)
     expect(json[:data][:attributes][:trails][0][:difficulty]).to be_a(String)
     expect(json[:data][:attributes][:trails][0][:location]).to be_a(String)
-    expect(json[:data][:attributes][:trails][0][:distance_to_trail]).to be_a(String)
   end
 end
