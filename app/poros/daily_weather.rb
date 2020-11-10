@@ -13,7 +13,7 @@ class DailyWeather
 
   def self.five_days(weather)
     weather.take(5).map do |per_day|
-      HourlyWeather.new(per_day)
+      DailyWeather.new(per_day)
     end
   end
 end

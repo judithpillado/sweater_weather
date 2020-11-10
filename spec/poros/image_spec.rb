@@ -8,9 +8,9 @@ RSpec.describe Image do
     
     expect(image).to be_an(Image)
     expect(image.id).to eq(nil)
-    expect(image.location).to eq(location)
-    expect(image.image_url).to be_a(String)
+    expect(image.location).to eq('denver,co')
+    expect(image.image_url).to eq('https://www.pexels.com/photo/dark-fog-forest-haze-6992/')
     expect(image.credit[:source]).to eq('pexels.com')
-    expect(image.credit[:photographer]).to be_a(String)
+    expect(image.credit[:photographer]).to eq('Snapwire')
   end
 end

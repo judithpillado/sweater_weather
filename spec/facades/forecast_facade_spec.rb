@@ -7,6 +7,11 @@ RSpec.describe ForecastFacade, :vcr do
       result = ForecastFacade.fetch_forecast(location)
 
       expect(result).to be_a(Forecast)
+      expect(result.current).to be_a(CurrentWeather)
+      expect(result.daily).to be_an(Array)
+      expect(result.daily[0]).to be_a(DailyWeather)
+      expect(result.hourly).to be_an(Array)
+      expect(result.hourly[0]).to be_an(HourlyWeather)
     end
   end
 end
