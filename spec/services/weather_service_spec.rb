@@ -4,10 +4,9 @@ RSpec.describe WeatherService, :vcr do
   describe 'class methods' do
     it 'fetch_weather' do
 
-      latitude = 39.738453
-      longitude = -104.984853
+      coordinates = { lat: 39.738453, lng: -104.984853 }
 
-      json = WeatherService.fetch_weather(latitude, longitude)
+      json = WeatherService.fetch_weather(coordinates)
 
       expect(json).to be_a(Hash)
 
