@@ -39,10 +39,6 @@ class MunchiesFacade
     (travel_time / 60 / 60)
   end
 
-  def time_conversion
-
-  end
-
   def self.fetch_forecast_summary(coordinates)
     current = WeatherService.fetch_weather(coordinates)[:current]
     current[:weather][0][:description]
