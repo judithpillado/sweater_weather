@@ -7,6 +7,9 @@ RSpec.describe BackgroundFacade, :vcr do
       result = BackgroundFacade.fetch_background(location)
 
       expect(result).to be_an(Image)
+      expect(result.credit).to be_a(Hash)
+      expect(result.image_url).to be_a(String)
+      expect(result.location).to be_a(String)
     end
   end
 end
