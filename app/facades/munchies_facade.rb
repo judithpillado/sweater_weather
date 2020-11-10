@@ -13,7 +13,7 @@ class MunchiesFacade
         "id": nil,
         "type": "munchie",
         "attributes": {
-          "destination_city": destination_city,
+          "destination_city": "#{destination_city.city}, #{destination_city.state},",
           "travel_time": travel_time,
           "forecast": {
             "summary": forecast_summary,
