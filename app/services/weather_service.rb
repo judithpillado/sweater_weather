@@ -9,6 +9,14 @@ class WeatherService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.fetch_destination_forecast(route_info)
+    response = conn.get("data/2.5/onecall") do |req|
+      req.params[:lat] = route_data[:route][:locations].last[:latLng][:lat]
+      req.params[:lon] = route_data[:route][:locations].last[:latLng][:lng]
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new("http://api.openweathermap.org/") do |req|
       req.params[:appid] = ENV['WEATHER_API']

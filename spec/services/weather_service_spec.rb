@@ -29,5 +29,15 @@ RSpec.describe WeatherService, :vcr do
 
       expect(daily_weather[0]).to have_key :sunset
     end
+
+    # it 'fetch_destination_forecast' do
+    # 
+    #   origin = 'denver,co'
+    #   destination = 'chicago,il'
+    #
+    #   route_info = MapquestService.fetch_distance_between(origin, destination)
+    #
+    #   json = WeatherService.fetch_destination_forecast(route_info)
+    # end
   end
 end
