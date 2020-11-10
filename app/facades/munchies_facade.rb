@@ -14,7 +14,7 @@ class MunchiesFacade
         "type": "munchie",
         "attributes": {
           "destination_city": "#{destination_city.city}, #{destination_city.state},",
-          "travel_time": travel_time,
+          "travel_time": "About #{travel_time} hour(s)",
           "forecast": {
             "summary": forecast_summary,
             "temperature": forecast_temperature
@@ -37,6 +37,10 @@ class MunchiesFacade
     route = MapquestService.fetch_distance_between(origin, destination)
     travel_time = route[:route][:legs][0][:time]
     (travel_time / 60 / 60)
+  end
+
+  def time_conversion
+
   end
 
   def self.fetch_forecast_summary(coordinates)

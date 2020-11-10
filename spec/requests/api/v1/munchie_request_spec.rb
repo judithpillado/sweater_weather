@@ -11,7 +11,7 @@ describe 'Munchie API' do
     expect(json[:data]).to be_a(Hash)
     expect(json[:data][:id]).to eq(nil)
     expect(json[:data][:type]).to eq('munchie')
-    expect(json[:data][:attributes][:destination_city][:city]).to eq('Pueblo')
+    expect(json[:data][:attributes][:destination_city]).to eq('Pueblo, CO,')
     expect(json[:data][:attributes][:forecast]).to be_a(Hash)
     expect(json[:data][:attributes][:forecast][:summary]).to be_a(String)
     expect(json[:data][:attributes][:forecast][:temperature]).to be_a(Float)
