@@ -14,6 +14,6 @@ RSpec.describe Forecast do
     expect(forecast.hourly).to be_an(Array)
     expect(forecast.hourly[0].wind_speed).to eq(7.66)
     expect(forecast.daily).to be_an(Array)
-    expect(forecast.daily[0].max_temp).to eq(287.58)
+    expect(forecast.daily[0].max_temp).to eq('287.58 degrees Fahrenheit')
   end
 end
