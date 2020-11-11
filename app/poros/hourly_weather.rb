@@ -2,8 +2,8 @@ class HourlyWeather
   attr_reader :time, :temperature, :wind_speed, :wind_direction, :conditions, :icon
 
   def initialize(attr)
-    @time = Time.at(attr[:dt])
-    @temperature = attr[:temp]
+    @time = "#{Time.at(attr[:dt]).hour}-#{Time.at(attr[:dt]).min}-#{Time.at(attr[:dt]).sec}"
+    @temperature = "#{attr[:temp]} degrees Fahrenheit"
     @wind_speed = attr[:wind_speed]
     @wind_direction = attr[:wind_deg]
     @conditions = attr[:weather][0][:description]
