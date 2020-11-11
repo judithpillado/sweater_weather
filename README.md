@@ -15,6 +15,7 @@ This is an app that allows users to plan road trips. It allows them to see the c
 Versioning: 
 * ruby 2.5.3
 * rails 5.2.4.4
+<br> 
 Download & install: 
 1. `git clone https://github.com/judithpillado/sweater_weather`
 2. `cd sweater_weather`
@@ -75,7 +76,9 @@ Response Example:
   }
 }
 ```
+
 <br> 
+
 **1.b - Background image for the city** 
 Request: 
 ```
@@ -106,7 +109,9 @@ body:
   }
 }
 ``` 
+
 <br> 
+
 **2 - User Registration** 
 Request: 
 ```
@@ -136,7 +141,9 @@ body:
   }
 }
 ``` 
+
 <br> 
+
 **3 - Login** 
 Request: 
 ```
@@ -149,7 +156,7 @@ Accept: application/json
   "password": "password"
 }
 ```
-Response: 
+Response Example: 
 ```
 status: 200
 body:
@@ -165,7 +172,9 @@ body:
   }
 }
 ```
+
 <br> 
+
 **4 - Road Trip** 
 Request: 
 ```
