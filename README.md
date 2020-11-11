@@ -36,7 +36,7 @@ Download & install:
 8. run the test suite: `bundle exec rspec`
 
 ### API Endpoints 
-**1.a - Retrieve weather for a city** 
+**1.a - Retrieve weather for a city** <br>
 Request: 
 ```
 GET /api/v1/forecast?location=denver,co
@@ -79,7 +79,7 @@ Response Example:
 
 <br> 
 
-**1.b - Background image for the city** 
+**1.b - Background image for the city** <br>
 Request: 
 ```
 GET /api/v1/backgrounds?location=denver,co
@@ -112,7 +112,7 @@ body:
 
 <br> 
 
-**2 - User Registration** 
+**2 - User Registration** <br>
 Request: 
 ```
 POST /api/v1/users
@@ -144,7 +144,7 @@ body:
 
 <br> 
 
-**3 - Login** 
+**3 - Login** <br>
 Request: 
 ```
 POST /api/v1/sessions
@@ -175,7 +175,7 @@ body:
 
 <br> 
 
-**4 - Road Trip** 
+**4 - Road Trip** <br>
 Request: 
 ```
 POST /api/v1/road_trip
