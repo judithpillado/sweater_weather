@@ -5,8 +5,8 @@ class CurrentWeather
     @datetime = Time.at(attr[:dt])
     @sunrise = Time.at(attr[:sunrise])
     @sunset = Time.at(attr[:sunset])
-    @temperature = attr[:temp]
-    @feels_like = attr[:feels_like]
+    @temperature = "#{attr[:temp]} degrees Fahrenheit"
+    @feels_like = "#{attr[:feels_like]} degrees Fahrenheit"
     @humidity = attr[:humidity]
     @uv_index = attr[:uvi]
     @visibility = attr[:visibility]
