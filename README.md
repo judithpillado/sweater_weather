@@ -15,8 +15,10 @@ This is an app that allows users to plan road trips. It allows them to see the c
 Versioning: 
 * ruby 2.5.3
 * rails 5.2.4.4
+
 <br> 
-Download & install: 
+
+Download & install: <br>
 1. `git clone https://github.com/judithpillado/sweater_weather`
 2. `cd sweater_weather`
 3. `bundle install`
