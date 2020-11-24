@@ -13,7 +13,7 @@ RSpec.describe RoadTrip, :vcr do
     expect(road_trip.origin).to eq('denver,co')
     expect(road_trip.destination).to eq('chicago,il')
     expect(road_trip.travel_time).to eq('14 hour(s), 24 minute(s)')
-    expect(road_trip.temperature_upon_arrival).to eq('39 degrees')
-    expect(road_trip.condition_upon_arrival).to eq('clear sky')
+    expect(road_trip.temperature_upon_arrival).to eq('44 degrees')
+    expect(road_trip.condition_upon_arrival).to eq('overcast clouds')
   end
 end
