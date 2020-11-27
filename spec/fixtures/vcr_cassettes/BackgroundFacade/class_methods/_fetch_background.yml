@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 24 Nov 2020 22:33:32 GMT
+      - Fri, 27 Nov 2020 20:01:25 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,16 +29,22 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d53269024187999c4f0b9c4ed5e6d33691606257212; expires=Thu, 24-Dec-20
-        22:33:32 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
-      - __cfduid=de1ec7c038c9c48e6cc6f96ca71f068241606245617; expires=Thu, 24-Dec-20
-        19:20:17 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cf_bm=12472987f361a99e1cbb586eebbc3ed1086fc266-1606507285-1800-Acc0eatLGA8RQPSJQfTS2Z2ntiML+sn6o/lvgwjWbLf63X7LNUUP4VvE2FMmyoQeCTfLHLpuL5OBVJNIWd2cs84=;
+        path=/; expires=Fri, 27-Nov-20 20:31:25 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=90a1475d785cb230f96c02b177efcc12c5e2fae1-1606507285-1800-AfmjL2Vf5V9+gmxGtRGMo74zwsDAlsW7BM5E8vI0ffsXusjQhOFAxTVzgDGzxFcW8tW2rLTH1EJoUGRBFPrkMGs=;
+        path=/; expires=Fri, 27-Nov-20 20:31:25 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cfduid=db1d20855f197dc0fcd109506e1e883281606507285; expires=Sun, 27-Dec-20
+        20:01:25 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cfduid=db3b97279ef7580ec8ac28e022b788f6a1606507285; expires=Sun, 27-Dec-20
+        20:01:25 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
       Cache-Control:
       - max-age=0, private, must-revalidate
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - '069dfd15ea00002fe61e949000000001'
+      - 06ace4e36d0000038804b2a000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Vary:
@@ -48,23 +54,21 @@ http_interactions:
       X-Ratelimit-Limit:
       - '20000'
       X-Ratelimit-Remaining:
-      - '19887'
+      - '19884'
       X-Ratelimit-Reset:
       - '1607406890'
       X-Request-Id:
-      - 9658619b-124b-4633-b954-39ff44169c35
+      - 40cad1d2-295f-4974-a74d-9a4320c47548
       X-Runtime:
-      - '0.063398'
+      - '0.063724'
       X-Server:
       - master
-      X-Tyk-Cached-Response:
-      - '1'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5f76979c9f702fe6-ORD
+      - 5f8e70e5798b0388-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"page":1,"per_page":1,"photos":[{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":509,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=denver%2Cco"}'
-  recorded_at: Tue, 24 Nov 2020 22:33:32 GMT
+      string: '{"page":1,"per_page":1,"photos":[{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":721,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=denver%2Cco"}'
+  recorded_at: Fri, 27 Nov 2020 20:01:25 GMT
 recorded_with: VCR 6.0.0
